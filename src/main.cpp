@@ -34,9 +34,11 @@ void competition_initialize() {}
 
 void autonomous() {
 
-
+myChassis->setState({0_in, 0_in, 0_deg});
 myChassis->driveToPoint({1_ft, 1_ft});
-
+myChassis->turnToAngle(90_deg);
+myChassis->turnToPoint({5_ft, 0_ft});
+myChassis->driveToPoint({5_ft, 2_ft});
 
 
 
